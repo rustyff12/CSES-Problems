@@ -24,10 +24,10 @@ Constraints
 `1 ≤ n ≤ 10^6`
 
 Example
-Input:
+**Input**:
 3
 
-Output:
+**Output**:
 3 10 5 16 8 4 2 1
 
 ---
