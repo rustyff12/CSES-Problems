@@ -34,6 +34,8 @@ Print the missing number.
 
 #### First solve
 
+#### Time complexity: O(n log n)
+
 My initial solve was as follows:
 
 - First I create a variable called `sorted` that uses the built in js `Array.prototype.sort()` method
@@ -42,4 +44,20 @@ My initial solve was as follows:
 
 - The length of the array is always `n - 1` and as there are no duplicate numbers we can asssume that any number that is greater than `1` in the the comparison of `current - previous > 1` will be the missing number
 
+#### Second solve
+
+#### Time complexity: O(n)
+
+#### Space Complexity: O(n)
+
 I then realised that actual it is as simple as the sum on `1` to `N` minus the sum of the actual array given
+
+### Python
+
+#### Time complexity: O(n)
+
+#### Space Complexity: O(n)
+
+- I basically used the same way as with javaScript.
+
+- I used list comprehension and did it as a one liner
