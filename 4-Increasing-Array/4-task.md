@@ -24,18 +24,40 @@ Print the minimum number of moves.
 ## Example
 
 **Input**:
-5
-3 2 5 1 7
+
+- `5`
+
+- `3 2 5 1 7`
+
 **Output**:
-5
+
+- `5`
 
 ## Solution explanation
 
 ### js
 
-#### Time complexity: `__`
+I have more than one solution for js.
 
-#### Space complexity: `__`
+#### Solution 1
+
+#### Time complexity: `O(n * m)`
+
+- This was a little bit of a "hack my way to a soulution".
+
+- I initially solved it the way a person would with a pencil.
+
+- I created a variable called `isSorted` to keep track of if the array was increasing in order
+
+- There was then a while loop checking for that condition.
+
+- The stoping condition or halting condition was `if i === arr.length - 1` and `if current >= prev`
+
+- If a array element is smaller than the previous element I mutate the current element by increasing it by 1.
+
+- I then reset `i` to be `1` thus starting the loop again
+
+#### Space complexity: `O(1)`
 
 ### Python
 
