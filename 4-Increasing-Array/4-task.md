@@ -3,7 +3,7 @@
 **Time limit**: 1.00 s
 **Memory limit**: 512 MB
 
-You are given an array of n integers. You want to modify the array so that it is increasing, i.e., every element is at least as large as the previous element.
+You are given an array of `n` integers. You want to modify the array so that it is increasing, i.e., every element is at least as large as the previous element.
 
 On each move, you may increase the value of any element by one. What is the minimum number of moves required?
 
@@ -47,7 +47,7 @@ I have more than one solution for js.
 
 - I initially solved it the way a person would with a pencil.
 
-- I created a variable called `isSorted` to keep track of if the array was increasing in order
+- Firstly create a variable called `isSorted` to keep track of if the array was increasing in order
 
 - There was then a while loop checking for that condition.
 
@@ -55,12 +55,36 @@ I have more than one solution for js.
 
 - If a array element is smaller than the previous element I mutate the current element by increasing it by 1.
 
-- I then reset `i` to be `1` thus starting the loop again
+- Then reset `i` to be `1` thus starting the loop again
+
+#### Solution 2
+
+- This was more straightforward.
+
+- It loops through the array from start to finish, starting at the second element
+
+- It creates a variable `difference` that takes the `prev` element minus the `current` element.
+
+- If the difference is greater than `0` it means that the `current` is smaller, so we then add the `difference` to the `current` and increase it in place
+
+- We keep track of the total `moves` and return them at the end
 
 #### Space complexity: `O(1)`
 
 ### Python
 
-#### Time complexity: `__`
+#### Time complexity: `O(n)`
 
-#### Space complexity: `__`
+#### Space complexity: `O(1)`
+
+- This Python solution is essentially equivalent to the second JS solution in logic.
+
+- It uses a single pass through the array (starting at the second element).
+
+- For each element, it compares it to the previous one. If it’s smaller, it calculates the difference.
+
+- That difference represents how much we need to increase the current element to match the previous one — so we add that to a `count` variable that tracks the total number of moves.
+
+- It also mutates the list in place by increasing the current element so it meets the increasing requirement.
+
+- The use of a simple loop with a counter and in-place mutation makes this solution both readable and efficient.
