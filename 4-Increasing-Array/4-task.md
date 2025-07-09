@@ -43,6 +43,8 @@ I have more than one solution for js.
 
 #### Time complexity: `O(n * m)`
 
+#### Space complexity: `O(1)`
+
 - This was a little bit of a "hack my way to a soulution".
 
 - I initially solved it the way a person would with a pencil.
@@ -59,6 +61,10 @@ I have more than one solution for js.
 
 #### Solution 2
 
+#### Time complexity: `O(n)`
+
+#### Space complexity: `O(1)`
+
 - This was more straightforward.
 
 - It loops through the array from start to finish, starting at the second element
@@ -68,8 +74,6 @@ I have more than one solution for js.
 - If the difference is greater than `0` it means that the `current` is smaller, so we then add the `difference` to the `current` and increase it in place
 
 - We keep track of the total `moves` and return them at the end
-
-#### Space complexity: `O(1)`
 
 ### Python
 
