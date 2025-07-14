@@ -21,7 +21,7 @@
 
 ### js
 
-#### Time complexity: `O(n * m)`
+#### Time complexity: ``
 
 #### Space complexity: `__`
 
