@@ -19,13 +19,16 @@ def two_sets(num):
 				num_list_2.append(i)
 				
 		print(f"Sum of list 1: {sum(num_list_1)}\nSum of list 2: {sum(num_list_2)}")
-		return f"List 1: {num_list_1} list 2: {num_list_2}"
+		return f"List 1: {num_list_1} \nlist 2: {num_list_2}"
 	else:
 		return "NO"
 
 print(two_sets(12))
+print("")
 print(two_sets(7))
+print("")
 print(two_sets(6))
+print("")
 print(two_sets(4))
 
 
